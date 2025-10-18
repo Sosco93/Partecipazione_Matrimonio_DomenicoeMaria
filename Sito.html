@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Video Matrimonio</title>
+  <title>Scopri la data</title>
   <style>
     body {
       font-family: sans-serif;
@@ -12,10 +12,18 @@
       background-color: #f8f8f8;
       color: #333;
     }
-    video {
-      max-width: 100%;
-      height: auto;
-      margin: 20px 0;
+    .video-container {
+      max-width: 640px;
+      margin: 0 auto 20px auto;
+      position: relative;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
     a.button {
       display: inline-block;
@@ -32,11 +40,18 @@
   </style>
 </head>
 <body>
-  <h1>Video del Matrimonio</h1>
-  <video controls>
-    <source src="<div style="height: 533.47px; width: 300.00px; position:relative;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/68f3a39c2597a84971e08f5e" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing" width="100%"></iframe></div><p style="font-size: 12px; text-align: right;">Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>">
-    Il tuo browser non supporta il tag video.
-  </video>
+  <h1>Scopri la data</h1>
+
+  <div class="video-container">
+    <iframe 
+      allow="autoplay; gyroscope;" 
+      allowfullscreen 
+      referrerpolicy="strict-origin" 
+      src="https://www.kapwing.com/e/68f3a39c2597a84971e08f5e" 
+      title="Embedded content made on Kapwing">
+    </iframe>
+  </div>
+
   <p>
     <a class="button" href="https://uli.st/maria-de-maria-domenico-cassese-230826" target="_blank">
       CLICCA QUI ❤️
@@ -44,4 +59,3 @@
   </p>
 </body>
 </html>
-
